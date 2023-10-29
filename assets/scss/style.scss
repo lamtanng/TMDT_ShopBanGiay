@@ -1,7 +1,7 @@
 // Abstracts:
-@import './Abstracts/mixin';
-@import './Abstracts/variable';
+@import "./Abstracts/mixin";
+@import "./Abstracts/variable";
 
-h1{
-    color: blue;
-}
+//Base:
+@import "./Base/base";
+@import "./Base/typography";
