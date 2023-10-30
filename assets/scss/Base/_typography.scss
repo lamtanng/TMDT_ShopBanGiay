@@ -1,0 +1,13 @@
+// text style
+$text: 
+    "title" 1.8rem 700, 
+    "subtitle" 1.8rem 500, 
+    "description" 1.4rem 400, 
+    "h2" 3.2rem 700, 
+    "medium" 1.6rem 500;
+@each $name, $size, $weigh in $text{
+    .text-#{$name}{
+        font-size: $size;
+        font-weight: $weigh;
+    }
+}

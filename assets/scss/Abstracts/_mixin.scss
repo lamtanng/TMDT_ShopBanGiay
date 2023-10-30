@@ -1,0 +1,23 @@
+$directions: row, column;
+@each $i in $directions{
+    .d-flex-#{$i}{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: $i;
+    }
+}
+
+
+
+@mixin position-absolute-center(){
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin style-tag-a(){
+    display: block;
+    text-decoration: none;
+}

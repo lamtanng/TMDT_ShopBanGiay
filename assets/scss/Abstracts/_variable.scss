@@ -14,9 +14,20 @@ $color-red-50: #feecee;
 $color-red-500: #f33f51;
 $color-red-600: #dd394a;
 
+$spacing-none: 0;
+$spacing-1: 2px;
+$spacing-2: 4px;
+$spacing-3: 8px;
+$spacing-4: 12px;
+$spacing-5: 16px;
+$spacing-6: 20px;
+$spacing-7: 24px;
+$spacing-8: 28px;
+$spacing-9: 32px;
+
 :root {
   --color-white: #{$color-white};
-  --color-black: #{$color-black};
+  --color-black: #{$color-black}; 
 
   --color-orange-50: #{$color-orange-50};
   --color-orange-500: #{$color-orange-500};
