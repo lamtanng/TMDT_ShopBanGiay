@@ -5,3 +5,9 @@
 //Base:
 @import "./Base/base";
 @import "./Base/typography";
+
+//Layout
+@import "./Layouts/footer.scss";
+@import "./Layouts/admin/header-admin";
+@import "./Layouts/user/header-user";
+

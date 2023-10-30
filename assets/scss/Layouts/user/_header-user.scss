@@ -1,0 +1,100 @@
+.u-header {
+    height: 10rem;
+    position: relative;
+    border-bottom: 1px solid $color-grey-4;
+    &-logo__link {
+    @include style-tag-a;
+    span {
+      color: $color-black;
+    }
+  }
+  &-nav {
+    .nav-list {
+      .nav-item__link {
+        @include style-tag-a;
+        margin-right: $spacing-7;
+        position: relative;
+        .nav-item__text {
+            color: $color-black;
+            letter-spacing: .5px;
+        }
+
+        &:hover{
+            &::after{
+                display: block;
+                content: "";
+                border: 1px solid $color-black;
+                width: 100%;
+                position: absolute;
+                top: calc(100% + 5px);
+                left: 0;
+            }
+        }
+      }
+
+    }
+  }
+  &-group {
+    position: relative;
+    .form-search {
+      input[type="text"] {
+        padding: $spacing-3;
+        border: 1px solid $color-grey-4;
+        float: left;
+        width: 80%;
+        background: $color-white;
+      }
+      /* Style the submit button */
+      button {
+        float: left;
+        width: 20%;
+        padding: 1.1rem;
+        background: $color-grey-4;
+        color: $color-black;
+        font-size: 1.2rem;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          background: $color-grey-6;
+        }
+      }
+      /* Clear floats */
+      &::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    }
+
+    .item-icon__link {
+      @include style-tag-a;
+      position: relative;
+      margin-left: $spacing-6;
+      i {
+        display: block;
+        color: $color-black;
+        font-size: 1.6rem;
+      }
+    
+
+    }
+    .item-icon__cart::after{
+        $height: 2.1rem;
+        display: block;
+        content: "1";
+        width: 2.6rem;
+        height: $height;
+        border-radius: 47%;
+        background-color: #333;
+        border: 0.5px solid #fff;
+        color: #fff;
+        font-size: 1rem;
+        position: absolute;
+        top: -70%;
+        right: -120%;
+        line-height: calc($height - 0.1rem);
+        text-align: center;
+    }
+  }
+}
